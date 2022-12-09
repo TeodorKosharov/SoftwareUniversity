@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login demo</title>
+    <script defer src="./app.js"></script>
+    <style>
+        div {
+            margin-top: 40px;
+        }
+
+        #userInfo {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Register</h2>
+    <form id="registerForm">
+        <label>Email: <input type="text" name="email"></label> <br>
+        <label>Password: <input type="password" name="password"></label> <br>
+        <label>Repeat: <input type="password" name="repass"></label> <br>
+        <button>Register</button>
+    </form>
+
+    <h2>Login</h2>
+    <form id="loginForm">
+        <label>Email: <input type="text" name="email"></label> <br>
+        <label>Password: <input type="password" name="password"></label> <br>
+        <button>Login</button>
+    </form>
+
+    <div>
+        <button id="logoutBtn">Logout</button>
+    </div>
+
+    <div>
+        <button id="userDetails">User Details</button>
+        <div id="userInfo">
+            <h3>Email: </h3>
+            <h3>Username: </h3>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
