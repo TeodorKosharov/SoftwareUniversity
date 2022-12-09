@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checking tasks</title>
+</head>
+<body>
+<h1>Available tasks</h1>
+<form action="{% url 'check tasks' %}" method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button>Submit</button>
+</form>
+
+{% if assigned_person %}
+    <h3>The selected task is assigned to: {{ assigned_person }}</h3>
+{% endif %}
+
+</body>
+</html>

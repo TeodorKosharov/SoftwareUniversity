@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Widgets Demo 2</title>
+</head>
+<body>
+<h1>ModelForm widgets</h1>
+<form method="post" action="{% url 'widgets demo 2' %}">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <button>Submit</button>
+</form>
+</body>
+</html>

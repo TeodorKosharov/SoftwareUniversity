@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CBV Demo</title>
+</head>
+<body>
+<h1>{{ title }}</h1>
+<ul>
+    {% for employee in employees %}
+        <li>
+            <a href="{% url 'employee details' pk=employee.pk %}">{{ employee.first_name }}</a>
+        </li>
+    {% endfor %}
+</ul>
+</body>
+</html>

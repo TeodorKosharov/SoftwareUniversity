@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="body">
+        <h1>Edit Note</h1>
+        <div class="form">
+            <form method="POST" action="{% url 'edit note page' pk=selected_note.pk %}">
+                {{ form }}
+                {% csrf_token %}
+                <input type="submit" value="Edit"/>
+            </form>
+        </div>
+    </div>
+{% endblock %}

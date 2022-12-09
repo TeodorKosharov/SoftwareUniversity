@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Person Form</title>
+</head>
+<body>
+
+<h1>Add person form</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button>Submit</button>
+    <h2>{{ name }}</h2>
+</form>
+
+<a href="{% url 'form 2' %}">Task Form</a>
+</body>
+</html>

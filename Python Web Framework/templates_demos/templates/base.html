@@ -1,0 +1,25 @@
+{% load tags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'demo.css' %}">
+</head>
+<body>
+    <h1>
+        {% app_nav 'default page' 'index' %}
+    </h1>
+
+{# Placeholder for child templates - child templates могат да вмъкват content тук #}
+{% block page_content %}
+
+{% endblock %}
+
+{% include 'partials.html' %}
+
+</body>
+</html>
+

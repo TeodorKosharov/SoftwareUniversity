@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display products</title>
+</head>
+<body>
+
+<h1>Show products:</h1>
+<a href="{% url 'display products' %}?page_size=3">3</a>
+<a href="{% url 'display products' %}?page_size=4">4</a>
+<a href="{% url 'display products' %}?page_size=6">6</a>
+
+{% for product in object_list %}
+    <div>
+        Name: {{ product.name }}
+    </div>
+{% endfor %}
+
+{% if page_obj.has_previous %}
+    <a href="?page={{ page_obj.previous_page_number }}">previous page</a>
+{% else %}
+    <a>previous page</a>
+{% endif %}
+
+{% if page_obj.has_next %}
+    <a href="?page={{ page_obj.next_page_number }}">next page</a>
+{% else %}
+    <a>next page</a>
+{% endif %}
+
+
+</body>
+</html>

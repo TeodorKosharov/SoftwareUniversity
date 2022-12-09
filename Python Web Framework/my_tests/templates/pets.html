@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pets</title>
+</head>
+<body>
+<h1>Add pet model form</h1>
+<form method="POST" action="{% url 'pets' %}">
+    {% csrf_token %}
+    {{ form }}
+    <button>Submit</button>
+</form>
+
+</body>
+</html>

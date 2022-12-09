@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+<h1>Login</h1>
+<form method="post" action="{% url 'login page' %}">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <button>Login</button>
+    {# Следващият ред ни редиректва към страницата, от която сме дошли, след успешно валидиране на формата   #}
+    <input name="next" type="hidden" value="{{ next }}">
+</form>
+<br>
+<p>
+    <a href="{% url 'show users' %}">
+        <button>Show users page</button>
+    </a>
+</p>
+
+<p>
+    <a href="{% url 'register page' %}">
+        <button>Register page</button>
+    </a>
+</p>
+
+</body>
+</html>

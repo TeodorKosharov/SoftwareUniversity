@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Widgets Demo</title>
+</head>
+<body>
+<h1>Widgets Demo</h1>
+<form method="post" action="{% url 'widgets demo' %}">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <button>Submit</button>
+</form>
+
+</body>
+</html>

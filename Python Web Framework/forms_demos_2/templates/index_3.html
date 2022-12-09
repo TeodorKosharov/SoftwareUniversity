@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{% url 'index 3' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <button>Submit</button>
+</form>
+
+{{ person.name }}
+<img src="/media/{{ person.profile_image }}">
+
+</body>
+</html>
+

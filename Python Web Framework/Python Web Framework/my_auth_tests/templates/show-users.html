@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show users</title>
+</head>
+<body>
+<h1>Users:</h1>
+<p>
+    Is there logged-in user: {{ is_logged }}
+</p>
+<ul>
+    {% for user in object_list %}
+        {% if logged_user == user %}
+            <li><strong>{{ user }}</strong></li>
+        {% else %}
+            <li>{{ user }}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+<p><a href="{% url 'login page' %}">
+    <button>Login page</button>
+</a></p>
+<p><a href="{% url 'register page' %}">
+    <button>Register page</button>
+</a></p>
+<p>
+    <a href="{% url 'show products' %}">
+        <button>Show products</button>
+    </a>
+</p>
+<p>
+    <a href="{% url 'add product' %}">
+        <button>Add product page</button>
+    </a>
+</p>
+
+{% if logged_user %}
+    <p>
+        <a href="{% url 'logout page' %}">
+            <button>Logout</button>
+        </a>
+    </p>
+
+    {% if logged_user.is_superuser %}
+        <p>{{ logged_user }} is superuser</p>
+    {% else %}
+        <p>{{ logged_user }} is NOT superuser</p>
+    {% endif %}
+{% endif %}
+
+</body>
+</html>
