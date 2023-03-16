@@ -19,3 +19,5 @@ Problem solutions for the respective courses.
 #### Python Web Basics - https://softuni.bg/certificates/details/147120/17ea1969
 
 #### Python Web Framework - https://softuni.bg/certificates/details/153005/303c479b
+
+#### HTML & CSS - https://softuni.bg/certificates/details/163210/81a792a7
