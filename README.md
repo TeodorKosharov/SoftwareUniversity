@@ -1,5 +1,9 @@
-# SoftwareUniversity
+# Software University
 Problem solutions for the respective courses.
+
+## Diplomas
+
+#### Python Web Developer - https://softuni.bg/certificates/details/163421/d9e2550e
 
 
 ## Certificates
