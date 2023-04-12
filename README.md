@@ -25,3 +25,5 @@ Problem solutions for the respective courses.
 #### Python Web Framework - https://softuni.bg/certificates/details/153005/303c479b
 
 #### HTML & CSS - https://softuni.bg/certificates/details/163210/81a792a7
+
+#### ReactJS - https://softuni.bg/certificates/details/168653/75085ad4
